@@ -1,0 +1,40 @@
+$mobile-width: 480px;
+$tablet-width: 992px;
+
+@mixin container-padding {
+    @media screen and (min-width: $mobile-width){
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid blue;
+    @include container-padding;
+}
+
+.container-fluid {
+    width: 100%;
+    @include container-padding;
+}
+
+.row {
+    width: 100%;
+
+    /* 
+    display: grid;
+    column-gap: 15px;
+    grid-template-columns: repeat(12, 1fr);
+    */
+}
+
+.col-1 {    
+    background-color: aqua;
+}
+
+.col-2 {
+    /* grid-column-end: span 2; */
+    background-color: green;
+}

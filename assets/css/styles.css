@@ -1,0 +1,116 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 11, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_grid.scss */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid blue;
+}
+
+@media screen and (min-width: 480px) {
+  /* line 11, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_grid.scss */
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+/* line 18, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_grid.scss */
+.container-fluid {
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  /* line 18, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_grid.scss */
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+/* line 23, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_grid.scss */
+.row {
+  width: 100%;
+  /* 
+    display: grid;
+    column-gap: 15px;
+    grid-template-columns: repeat(12, 1fr);
+    */
+}
+
+/* line 33, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_grid.scss */
+.col-1 {
+  background-color: aqua;
+}
+
+/* line 37, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_grid.scss */
+.col-2 {
+  /* grid-column-end: span 2; */
+  background-color: green;
+}
+
+/* line 9, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/styles.scss */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=../styles.map */
