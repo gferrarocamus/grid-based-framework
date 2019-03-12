@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-/* line 6, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,96 +20,63 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 27, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
-/* line 31, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_reset.scss */
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
-/* line 34, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_reset.scss */
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
-/* line 37, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_reset.scss */
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
-/* line 40, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none;
-}
+  content: none; }
 
-/* line 45, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_reset.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
-/* line 11, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_grid.scss */
 .container {
   width: 90%;
   margin: 0 auto;
-  border: 1px solid blue;
-}
+  border: 1px solid blue; }
+  @media screen and (min-width: 480px) {
+    .container {
+      padding-right: 15px;
+      padding-left: 15px; } }
 
-@media screen and (min-width: 480px) {
-  /* line 11, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_grid.scss */
-  .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-
-/* line 18, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_grid.scss */
 .container-fluid {
-  width: 100%;
-}
+  width: 100%; }
+  @media screen and (min-width: 480px) {
+    .container-fluid {
+      padding-right: 15px;
+      padding-left: 15px; } }
 
-@media screen and (min-width: 480px) {
-  /* line 18, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_grid.scss */
-  .container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-
-/* line 23, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_grid.scss */
 .row {
   width: 100%;
-  /* 
-    display: grid;
-    column-gap: 15px;
-    grid-template-columns: repeat(12, 1fr);
-    */
-}
+  display: flex; }
 
-/* line 33, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_grid.scss */
 .col-1 {
-  background-color: aqua;
-}
+  word-wrap: break-word;
+  margin-right: 10px;
+  width: 8.33%;
+  background-color: aqua; }
 
-/* line 37, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/_grid.scss */
 .col-2 {
-  /* grid-column-end: span 2; */
-  background-color: green;
-}
+  margin-right: 10px;
+  width: 16.66%;
+  background-color: green; }
 
-/* line 9, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/assets/css/sass/styles.scss */
 *, *::after, *::before {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
-/*# sourceMappingURL=../styles.map */
+/*# sourceMappingURL=styles.css.map */

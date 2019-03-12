@@ -22,19 +22,24 @@ $tablet-width: 992px;
 
 .row {
     width: 100%;
-
-    /* 
-    display: grid;
-    column-gap: 15px;
-    grid-template-columns: repeat(12, 1fr);
-    */
+    display: flex;
+    //justify-content: space-between;
+    // display: grid;
+    // column-gap: 15px;
+    // grid-template-columns: repeat(12, 1fr);
 }
 
-.col-1 {    
+.col-1 {
+    // grid-column-end: span 1;
+    word-wrap: break-word;
+    margin-right: 10px;
+    width: 8.33%;
     background-color: aqua;
 }
 
 .col-2 {
-    /* grid-column-end: span 2; */
+    // grid-column-end: span 2;
+    margin-right: 10px;
+    width: 16.66%;
     background-color: green;
 }
