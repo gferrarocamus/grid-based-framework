@@ -7,3 +7,21 @@
 *, *::after, *::before {
     box-sizing: border-box;
 }
+
+.wrap {
+    word-wrap: break-word;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red, #red {
+    background-color: red;
+}

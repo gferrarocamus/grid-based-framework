@@ -1,10 +1,5 @@
-$mobile-width: 480px;
-$tablet-width: 992px;
-
-@mixin column($span) {
-  flex: 0 0 (100% / $span);
-  max-width: (100% / $span);
-}
+$small-width: 480px;
+$medium-width: 992px;
 
 .container {
     width: 90%;
@@ -13,7 +8,7 @@ $tablet-width: 992px;
     border: 1px solid blue;
     padding-right: 15px;
     padding-left: 15px;
-    @media screen and (max-width: $mobile-width){
+    @media screen and (max-width: $small-width){
       width: 100%;
     }
 }
@@ -38,57 +33,29 @@ $tablet-width: 992px;
   position: relative;
 }
 
-.col-1 {
-    @include column(12);
-    background-color: aqua;
+
+/*
+@media screen and (max-width: $small-width) {
+    .col-m-2 { 
+        // 100% in s; span 2 in m and l
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
-.col-2 {
-    @include column(6);
-    background-color: green;
+@media screen and (max-width: $medium-width){
+    [class*="col-l-"] {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
+*/
 
-.col-3 {
-    @include column(4);
-    background-color: red;
-}
-
-.col-4 {
-  @include column(3);
-}
-
-.col-5 {
-  @include column(12 / 5);
-}
-
-.col-6 {
-  @include column(2);
-}
-
-.col-7 {
-  @include column(12 / 7);
-}
-
-.col-8 {
-  @include column(12 / 8);
-}
-
-.col-9 {
-  @include column(12 / 9);
-}
-
-.col-10 {
-  @include column(12 / 10);
-}
-
-.col-11 {
-  @include column(12 / 11);
-}
-
-.col-12 {
-  @include column(1);
-}
-
-.wrap {
-  word-wrap: break-word;
+@for $i from 1 through 12 {
+    .col-#{$i},
+    .col-s-#{$i},
+    .col-m-#{$i} {
+        flex: 0 0 (100% / (12 / #{$i}));
+        max-width: (100% / (12 / #{$i}));
+    }
 }
