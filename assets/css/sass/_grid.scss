@@ -1,45 +1,94 @@
 $mobile-width: 480px;
 $tablet-width: 992px;
 
-@mixin container-padding {
-    @media screen and (min-width: $mobile-width){
-        padding-right: 15px;
-        padding-left: 15px;
-    }
+@mixin column($span) {
+  flex: 0 0 (100% / $span);
+  max-width: (100% / $span);
 }
 
 .container {
     width: 90%;
+    max-width: 1140px;
     margin: 0 auto;
     border: 1px solid blue;
-    @include container-padding;
+    padding-right: 15px;
+    padding-left: 15px;
+    @media screen and (max-width: $mobile-width){
+      width: 100%;
+    }
 }
 
 .container-fluid {
     width: 100%;
-    @include container-padding;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .row {
-    width: 100%;
+    margin-right: -15px;
+    margin-left: -15px;
     display: flex;
-    //justify-content: space-between;
-    // display: grid;
-    // column-gap: 15px;
-    // grid-template-columns: repeat(12, 1fr);
+    flex-wrap: wrap;
+}
+
+[class*="col-"] {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 100%;
+  position: relative;
 }
 
 .col-1 {
-    // grid-column-end: span 1;
-    word-wrap: break-word;
-    margin-right: 10px;
-    width: 8.33%;
+    @include column(12);
     background-color: aqua;
 }
 
 .col-2 {
-    // grid-column-end: span 2;
-    margin-right: 10px;
-    width: 16.66%;
+    @include column(6);
     background-color: green;
+}
+
+.col-3 {
+    @include column(4);
+    background-color: red;
+}
+
+.col-4 {
+  @include column(3);
+}
+
+.col-5 {
+  @include column(12 / 5);
+}
+
+.col-6 {
+  @include column(2);
+}
+
+.col-7 {
+  @include column(12 / 7);
+}
+
+.col-8 {
+  @include column(12 / 8);
+}
+
+.col-9 {
+  @include column(12 / 9);
+}
+
+.col-10 {
+  @include column(12 / 10);
+}
+
+.col-11 {
+  @include column(12 / 11);
+}
+
+.col-12 {
+  @include column(1);
+}
+
+.wrap {
+  word-wrap: break-word;
 }
