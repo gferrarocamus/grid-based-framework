@@ -37,7 +37,7 @@ This is a minimal framework built with SCSS to provide a basic 12-column layout,
     <li>Other utilities: <code>.bold</code> and <code>.uppercase</code> are included to increase the font weight to 700 and to transform the text to uppercase, respectively.</li>
 </ul>
 
-## Other Utilities
+### Other Utilities
 
 <ul>
     <li>Box-sizing is applied by default.</li>
