@@ -38,13 +38,26 @@ header {
 }
 
 section {
-    padding: 30px 0;
+    padding: 80px 0;
 }
 
 .section-header {
     width: 80%;
     max-width: 570px;
     margin: 0 auto;
+    padding-bottom: 120px;
+}
+
+.section-header h1 {
+  padding-bottom: 50px;
+}
+
+.how-it-works-img {
+  height: 165px;
+}
+
+.how-it-works-h3 {
+  padding: 20px 0;
 }
 
 .btn {
