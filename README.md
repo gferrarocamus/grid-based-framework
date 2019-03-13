@@ -1,7 +1,7 @@
 # Grid-Based Framework
 
 ## Introduction
-This is a minimal framework built with SCSS to provide a basic 12-column layout, basic typography styles, and some commonly-used utilities. Our aim was not to recreate Bootstrap or to provide an exhaustive resource but rather a lean foundation to build upon. We've included [Eric Meyer's reset](https://meyerweb.com/eric/tools/css/reset/).
+This is a minimal framework built with SCSS to provide a basic 12-column layout, basic typography styles, and some commonly-used utilities. Our aim was not to recreate Bootstrap or to provide an exhaustive collection of style or widget resources, but rather to create a lean foundation to adapt and build upon.
 
 ## Description
 
@@ -41,6 +41,7 @@ This is a minimal framework built with SCSS to provide a basic 12-column layout,
     <li>Box-sizing is applied by default.</li>
     <li>There's a <code>.clearfix</code> class that can be applied to containers of floated elements, to clear both floats.</li>
     <li>Different display classes are available for the main display property values, for example: <code>.d-none</code> and <code>.d-flex</code>.</li>
+    <li>We've included [Eric Meyer's reset](https://meyerweb.com/eric/tools/css/reset/).</li>
 </ul>
 
 ## Sample
