@@ -5,7 +5,6 @@ $medium-width: 992px;
     width: 90%;
     max-width: 1140px;
     margin: 0 auto;
-    border: 1px solid blue;
     padding-right: 15px;
     padding-left: 15px;
     @media screen and (max-width: $small-width){
@@ -33,29 +32,23 @@ $medium-width: 992px;
   position: relative;
 }
 
-
-/*
-@media screen and (max-width: $small-width) {
-    .col-m-2 { 
-        // 100% in s; span 2 in m and l
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
-
-@media screen and (max-width: $medium-width){
-    [class*="col-l-"] {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
-*/
-
 @for $i from 1 through 12 {
-    .col-#{$i},
-    .col-s-#{$i},
-    .col-m-#{$i} {
+    .col-#{$i} {
         flex: 0 0 (100% / (12 / #{$i}));
         max-width: (100% / (12 / #{$i}));
+    }
+}
+
+@media (max-width: $small-width) {
+    .expand-col-s {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: $medium-width) {
+    .expand-col-m {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }

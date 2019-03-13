@@ -18,10 +18,26 @@
     clear: both;
 }
 
-.blue {
-    background-color: blue;
+.d-none {
+    display: none;
 }
 
-.red, #red {
-    background-color: red;
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.d-table {
+    display: table;
 }
