@@ -256,49 +256,49 @@ h6 {
   font-weight: 700;
 }
 
+/* line 63, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/_typography.scss */
+.uppercase {
+  text-transform: uppercase;
+}
+
 /* line 7, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/styles.scss */
 *, *::after, *::before {
   box-sizing: border-box;
 }
 
 /* line 11, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/styles.scss */
-.wrap {
-  word-wrap: break-word;
-}
-
-/* line 15, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/styles.scss */
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 21, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/styles.scss */
+/* line 17, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/styles.scss */
 .d-none {
   display: none;
 }
 
-/* line 25, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/styles.scss */
+/* line 21, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/styles.scss */
 .d-flex {
   display: flex;
 }
 
-/* line 29, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/styles.scss */
+/* line 25, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/styles.scss */
 .d-block {
   display: block;
 }
 
-/* line 33, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/styles.scss */
+/* line 29, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/styles.scss */
 .d-inline-block {
   display: inline-block;
 }
 
-/* line 37, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/styles.scss */
+/* line 33, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/styles.scss */
 .d-grid {
   display: grid;
 }
 
-/* line 41, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/styles.scss */
+/* line 37, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/styles.scss */
 .d-table {
   display: table;
 }
