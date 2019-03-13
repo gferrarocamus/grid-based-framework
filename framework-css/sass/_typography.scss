@@ -1,14 +1,17 @@
-$font-text: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans,
+$font-heading: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans,
   sans-serif;
-$font-heading: Georgia, "Times New Roman", Times, serif;
+$font-text: Georgia, "Times New Roman", Times, serif;
 
 html,
 body,
 p,
 a,
-button,
 li {
   font-family: $font-text;
+}
+
+button {
+  font-family: $font-heading;
 }
 
 a {

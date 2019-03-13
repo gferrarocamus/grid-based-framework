@@ -191,63 +191,67 @@ html,
 body,
 p,
 a,
-button,
 li {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* line 13, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/_typography.scss */
+button {
   font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
 }
 
-/* line 14, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/_typography.scss */
+/* line 17, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/_typography.scss */
 a {
   text-decoration: none;
 }
 
-/* line 18, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/_typography.scss */
+/* line 21, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/_typography.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 22, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/_typography.scss */
+/* line 25, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/_typography.scss */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
   line-height: 1.5;
 }
 
-/* line 32, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/_typography.scss */
+/* line 35, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/_typography.scss */
 h1 {
   font-size: 24px;
 }
 
-/* line 36, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/_typography.scss */
+/* line 39, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/_typography.scss */
 h2 {
   font-size: 20px;
 }
 
-/* line 40, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/_typography.scss */
+/* line 43, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/_typography.scss */
 h3 {
   font-size: 18px;
 }
 
-/* line 44, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/_typography.scss */
+/* line 47, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/_typography.scss */
 h4 {
   font-size: 16px;
 }
 
-/* line 48, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/_typography.scss */
+/* line 51, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/_typography.scss */
 h5 {
   font-size: 14px;
 }
 
-/* line 52, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/_typography.scss */
+/* line 55, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/_typography.scss */
 h6 {
   font-size: 12px;
 }
 
-/* line 56, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/_typography.scss */
+/* line 59, /home/giulianaferraro/Microverse/Main Curriculum/grid-based-framework/framework-css/sass/_typography.scss */
 .bold {
   font-weight: 700;
 }
