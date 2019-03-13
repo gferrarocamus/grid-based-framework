@@ -41,7 +41,7 @@ This is a minimal framework built with SCSS to provide a basic 12-column layout,
     <li>Box-sizing is applied by default.</li>
     <li>There's a <code>.clearfix</code> class that can be applied to containers of floated elements, to clear both floats.</li>
     <li>Different display classes are available for the main display property values, for example: <code>.d-none</code> and <code>.d-flex</code>.</li>
-    <li>We've included [Eric Meyer's reset](https://meyerweb.com/eric/tools/css/reset/).</li>
+    <li>We've included <a href="https://meyerweb.com/eric/tools/css/reset/">Eric Meyer's reset</a>.</li>
 </ul>
 
 ## Sample
