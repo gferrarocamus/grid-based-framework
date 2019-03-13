@@ -1,51 +1,57 @@
+html,
+body,
+a {
+  color: #4a4a4a;
+}
+
 nav {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .nav-logo {
-    width:70%;
+  width: 70%;
 }
 
 .nav-list,
 .burger-container {
-    width: 100%;
-    height: 100%;
-    max-width: 460px;
-    float:right;
-    text-align: right;
-    justify-content: space-between;
-    align-items:center;
+  width: 100%;
+  height: 100%;
+  max-width: 460px;
+  float: right;
+  text-align: right;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header {
-    background-image: linear-gradient(to bottom, #fff, #eee);
+  background-image: linear-gradient(to bottom, #fff, #eee);
 }
 
 .hero {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 40px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
 }
 
 .hero p {
-    margin: 20px 0 50px;
+  margin: 20px 0 50px;
 }
 
 .hero-img {
-    width: 100%;
-    margin-top: 50px;
+  width: 100%;
+  margin-top: 50px;
 }
 
 section {
-    padding: 80px 0;
+  padding: 80px 0;
 }
 
 .section-header {
-    width: 80%;
-    max-width: 570px;
-    margin: 0 auto;
-    padding-bottom: 120px;
+  width: 80%;
+  max-width: 570px;
+  margin: 0 auto;
+  padding-bottom: 120px;
 }
 
 .section-header h1 {
@@ -83,12 +89,13 @@ section {
   margin-right: 12px;
   margin-left: 12px;
   background-color: white;
-  box-shadow: 0 7px 16px 0 rgba(0,0,0,0.05);
+  box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.05);
 }
 
 .wrapper img {
   width: 160px;
   height: 160px;
+  margin-bottom: 10px;
 }
 
 .success-stories {
@@ -97,6 +104,7 @@ section {
 
 .success-wrapper {
   padding: 40px 0;
+  align-items: flex-start;
 }
 
 .success-wrapper img {
@@ -104,6 +112,8 @@ section {
   height: 50px;
   border-radius: 50%;
   margin-right: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 .success-h1 {
@@ -115,6 +125,7 @@ section {
 }
 
 .sign-up a {
+  text-decoration: underline;
   padding: 40px 0 80px;
 }
 
@@ -135,6 +146,9 @@ footer {
 
 .footer-social {
   height: 100%;
+  width: 70%;
+  min-width: 240px;
+  margin: 0 auto;
   justify-content: space-around;
   align-items: center;
 }
@@ -143,27 +157,35 @@ footer {
   font-size: 24px;
 }
 
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.align-center {
+  align-items: center;
+}
+
 .btn {
-    border-radius: 0.2em;
-    box-shadow: 0 0.05em 0.25em 0 rgba(0,0,0,0.5);
-    color: #fff;
-    display: inline-block;
-    font-size: 1em;
-    font-weight: bold;
-    letter-spacing: 0.2px;
-    padding: 1rem 3.5rem;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border: none;
+  border-radius: 0.2em;
+  box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  padding: 1rem 3.5rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
 }
 
 .blue {
-    background-color: #6abfc3;
+  background-color: #6abfc3;
 }
 
 .tan {
-    background-color: #ce973e;
+  background-color: #ce973e;
 }
 
 .tan-color {
@@ -171,26 +193,38 @@ footer {
 }
 
 .blue-color {
-  color: #6abfc3;  
+  color: #6abfc3;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+  .burger-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .expand-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .d-none-768 {
+    display: none;
+  }
 
-@media (max-width:768px) {
-    .nav-list {
-        display: none;
-    }
-    .burger-container {
-        display: flex;
-        justify-content: flex-end;
-    }
-    .expand-col {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
+  .col-2-768 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+
+  .col-4-768 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 991.98px) {
@@ -207,7 +241,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .success-wrapper {
     max-width: 600px;
     margin: 0 auto;
