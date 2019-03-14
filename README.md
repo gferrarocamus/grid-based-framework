@@ -1,7 +1,7 @@
 # Grid-Based Framework
 
 ## Introduction
-This is a minimal framework built with SCSS to provide a basic 12-column layout, basic typography styles, and some commonly-used utilities. Our aim was not to recreate Bootstrap or to provide an exhaustive collection of styles or resources, but rather to create a lean foundation to build upon.
+This is a minimal framework built with SCSS to provide a basic 12-column layout, basic typography styles, and some commonly-used utilities. Our aim was not to recreate [Bootstrap](https://getbootstrap.com/) or to provide an exhaustive collection of styles or resources, but rather to create a lean foundation to build upon.
 
 ## Description
 
@@ -48,6 +48,6 @@ This is a minimal framework built with SCSS to provide a basic 12-column layout,
 
 ## Sample
 
-Using this framework, we've recreated [The Odin Project's homepage](https://www.theodinproject.com/home), as can be viewed [here](https://gferrarocamus.github.io/grid-based-framework/).
+Using this framework, we've recreated [The Odin Project's homepage](https://www.theodinproject.com/home), as can be viewed [here](https://gferrarocamus.github.io/grid-based-framework/sample-page/index.html).
 
 Created by [Giuliana](https://github.com/gferrarocamus) and [Valentino](https://github.com/1ba1)
